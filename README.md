@@ -11,7 +11,7 @@ Ce que je n'ai pas réussi à faire :
 - Le login automatique dans la foulée de la création d'un user. (dernière phrase de la consigne de l'exercice 2.2.1) 
 - La vérification de l'auteur des ragots dans les méthode update/delete du controller gossip (Deuxième phrase de l'exercice 2.5 "De plus..."). J'ai laissé ma tentative en commentaire dans le gossips_controller.
 - Tout ce qui est lié au formulaire de commentaire car je n'avais pas réussi à faire ce dernier la veille.
-- Un beau front :D Je m'y suis pas trop attardé mais par exemple j'ai eu du mal a lier les helpers de formulaire rails avec du code html... Et pour le reste j'avais pas trop d'idée de comment bien embellir à posteriori. Si tu es fort(e) en front et que tu veux me montrer un ou deux truc facile à implémenter dans mon code ce serait top.
+- Un beau front :D Je m'y suis pas trop attardé mais par exemple j'ai eu du mal a lier les helpers de formulaire rails avec du code html... Et pour le reste j'avais pas trop d'idée de comment bien embellir à posteriori. Si tu es fort(e) en front et que tu veux me montrer un ou deux truc facile à implémenter dans mon code ce serait top. Le seul truc sympa que J'ai mis sont les alertes bootstrap verte/rouge mais quand on clique sur la croix à droite du bandeau ça ne se ferme pas :@
 
 Pour tester je te conseille de créer deux users (tu peux le faire directement sur le site ou alors via la console) et d'écrire un gossip chacun avec. Comme ça quand tu es connecté avec un compte tu pourras voir la différence sur la page de ton gossip et celle du gossip de l'autre user (accès a l'édition/supression). Ou de réparer mon seed si tu es brave.
 
