@@ -6,6 +6,7 @@ bundle install - rails db:create - rails db:migrate - rails server
 --
 
 Salut, le projet à été effectué sauf pour la partie 2.6 
+
 Ce que je n'ai pas réussi à faire : 
 - Le login automatique dans la foulée de la création d'un user. (dernière phrase de la consigne de l'exercice 2.2.1) 
 - La vérification de l'auteur des ragots dans les méthode update/delete du controller gossip (Deuxième phrase de l'exercice 2.5 "De plus..."). J'ai laissé ma tentative en commentaire dans le gossips_controller.
