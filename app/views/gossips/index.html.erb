@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <% if flash[:notice] %>
+       <div class="alert alert-dismissible alert-success">
+       <div class="notice"><strong><%= flash[:notice] %></strong>
+       Merci !</div>
+       <button type="button" class="close" data-dismiss="alert">&times;</button>
+      </div>
+    <% end %>
+    <button type="button"> <%= link_to "Créer un ragot", new_gossip_path %></button>
+
+<br />
+<br />
+
+    <% @gossips.each do |gossip| %>
+     <li>  <%= gossip.user.first_name %>
+     <a href="<%=gossip_path(gossip.id)%>"><%=gossip.title %> </a> 
+     </li>
+   <%end%>
+
+  </body>
+</html>

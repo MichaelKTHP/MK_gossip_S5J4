@@ -1,0 +1,17 @@
+<h1><%= @city.name%></h1>
+
+<p> Liste des potins de cette ville</p>
+<div>
+
+<ul class="list-group">  <% @city.users.each do |u| %>
+
+<% u.gossips.each do |g|%>
+<li class ="list-group-item">  <%= u.first_name %>  </li>
+<li class ="list-group-item">  <%= g.title %>  </li>
+<li class ="list-group-item">  <%= g.content %>  </li>
+   <% end %>
+ <% end %>
+
+</ul>
+</div>
+

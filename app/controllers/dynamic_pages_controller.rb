@@ -3,8 +3,7 @@ class DynamicPagesController < ApplicationController
 
 
   end
-
-  def gossip
-  	
+  def profile
   end
+ 
 end

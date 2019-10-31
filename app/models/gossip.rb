@@ -13,4 +13,7 @@ class Gossip < ApplicationRecord
 
   # 1-N associations with likes
   has_many :likes
+
+  validates :title, length: { in: 3..14 }, presence: true
+  validates :content, presence: true
 end

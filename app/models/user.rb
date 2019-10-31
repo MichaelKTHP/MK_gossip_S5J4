@@ -1,4 +1,9 @@
 class User < ApplicationRecord
+  has_secure_password
+
+  validates :password, presence: true, length: { minimum: 6 }
+
+
   belongs_to :city
   # 1-N association with gossips table
   has_many :gossips

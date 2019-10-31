@@ -9,8 +9,6 @@ class StaticPagesController < ApplicationController
 
   end
 
-  def profile
-
-  end
+ 
 
 end

@@ -1,13 +1,24 @@
-<%= Gossip.all.each_with_index do |gossip,index| %>
+<html>
+  <body>
+<% if flash[:notice] %>
+  <div class="alert alert-dismissible alert-success">
+    <div class="notice"><strong><%= flash[:notice] %></strong>
+     Thanks!</div>
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+  </div>
+<% end %>
 
-<p> <%= gossip.user.first_name%>
-<%=gossip.title %> 
+
+<% Gossip.all.each_with_index do |gossip,index| %>
+ <li>  <%= gossip.user.first_name %>
+ <%=gossip.title %> 
  <a href="/gossips/<%=index%>">Lien</a>  
+</li>
 
-</p>
+
 
 
 <% end %>
 
-
-
+</body>
+</html>

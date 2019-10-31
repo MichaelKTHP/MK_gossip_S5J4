@@ -1,0 +1,14 @@
+<p> Ceci est le profil de  <%= User.all[(params[:id].to_i)-1].first_name%> 
+	<!--  le -1 sert à gérer le décalage entre l'ID et l'index dans l'array  -->
+</p>
+
+    <ul>
+          <li>First name:<%= User.all[(params[:id].to_i)-1].first_name %></li>
+          <li>Last name:<%= User.all[(params[:id].to_i)-1].last_name %></li>
+          <li>Description:<%= User.all[(params[:id].to_i)-1].description %></li>
+          <li>Email:<%= User.all[(params[:id].to_i)-1].email%></li>
+          <li>Age:<%= User.all[(params[:id].to_i)-1].age%></li>
+          <li>Ville : <%= link_to @user.city.name, city_path(@user.city.id)%></li>
+
+
+     </ul>     
